@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script  type =  "text/javascript">  
+var myImg = new Array ("../images/arrow_left.png", "../images/arrow_left_on.png");
+ 
+var myPre = new Array ();
+ 
+for (var i = 0; i < myImg.length; i++ )
+{
+
+myPre[ i ]= new Image();
+myPre[ i ].src = myPics[ i ];
+
+}
+
+
+function mySwap(s)
+{
+
+if ( s == 0 )document.images.arrowl.src = "../images/arrow_left.png";
+if ( s == 1 )document.images.arrowl.src = "../images/arrow_left_on.png";
+
+if ( s == 2 )document.images.arrowr.src = "../images/arrow_right.png";
+if ( s == 3 )document.images.arrowr.src = "../images/arrow_right_on.png";
+
+}
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../style.css" type="text/css" />
+<title>Robert Abrams Consulting</title>
+</head>
+
+<body>
+
+<div id="main">
+<div id="subnavsm">
+<ul>
+<li><a href="#" class="sel">ExploreDance.com</a></li>
+<li><a href="design2.html">Jake's Saloon</a></li>
+<li><a href="design3.html">VS and You - Furrier</a></li>
+<li><a href="design4.html">Steve Hill<br />Photography</a></li>
+<li><a href="design5.html">Bebe Winkler<br />Interior Design</a></li>
+<li><a href="design6.html">Joseph Patelson<br />Music House</a></li>
+<li><a href="design7.html">Marcy Gross,<br />Dance Instructor</a></li>
+<li><a href="design8.html">Institute of Nuclear<br />Power Operations</a></li>
+<li><a href="design9.html">Shared Values</a></li>
+<li><a href="design10.html">LifeMap</a></li>
+<li><a href="design11.html">Klein Supermarket</a></li>
+</ul>
+</div>
+<div id="content">
+<div id="nav">
+<ul>
+<li><a href="../index.html"><img src="../images/services_tab.png" /></a></li>
+<li><a href="../people.html"><img src="../images/people_tab.png" /></a></li>
+<li><a href="../resources.html"><img src="../images/resources_tab.png" /></a></li>
+<li><a href="../portfolio.html"><img src="../images/portfolio_tab_sel.png" /></a></li>
+<li><a href="../email.html"><img src="../images/email_tab.png" /></a></li>
+
+</ul>
+</div>
+<img src="../images/portfolio_circle.png" id="section"/>
+<div id="designbody">
+
+<h1>ExploreDance.com</h1>
+<div id="imgmore"><img src="../images/design1.jpg" /></div>
+<p>ExploreDance.com is a web magazine that brings the worlds of dance together.  The site is published by Robert Abrams.  It covers performance dance (ballet, modern, flamenco, odissi and more), as well as social dance (swing, salsa, tango, ballroom and beyond).  The site is serious about dance without taking itself too seriously all of the time.  The contributors to the site are based in New York City, Los Angeles and parts in between.  The site receives over 1 million page views per month and is an institutional member of the <a href='http://www.dancecritics.org' target="_blank">Dance Critics Association</a>, of which Robert Abrams is currently serving a term as President.  If you are looking for diverse and unique perspectives on dance expressed as text and photos (and a few videos), check out ExploreDance.com.  We are always looking for new contributors too.
+<br />
+ExploreDance.com is built on a custom content management system created with major assistance from Ian MacKenzie.  It uses PHP and MySQL to generate up to date pages as they are needed.  Most content is loaded into the site using a sophisticated, multi-user back end.  It has over 2100 pages of active content, it has multiple ways of accessing the content, with much more in development.
+</p>
+<table width="65%">
+<tr>
+<td width="60%" rowspan="2">
+<a href="http://www.ExploreDance.com/" target="_blank" class="designs">View ExploreDance.com</a><br />
+<a href="../services/knowledge.html" class="designs">Return to Knowledge Management</a><br />
+<a href="../services/design.html" class="designs">Return to Website Design</a><br />
+<a href="../services/dance.html" class="designs">Return to Dance Publishing</a>
+</td>
+<td>&nbsp;
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+<a href="design11.html"><img id="arrowl" src="../images/arrow_left.png" onmouseout="mySwap(0)"  onmouseover="mySwap(1)" width="80" height="49" /></a>
+</td>
+<td><a href="design2.html"><img id="arrowr" src="../images/arrow_right.png" onmouseout="mySwap(2)"  onmouseover="mySwap(3)" width="80" height="49" /></a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="designs">
+<div id="dtitle">our designs</div>
+<ul>
+<li><a href="design2.html"><img src="../images/design2.jpg" /></a></li>
+<li><a href="design3.html"><img src="../images/design3.jpg" /></a></li>
+<li><a href="design4.html"><img src="../images/design4.jpg" /></a></li>
+<li><a href="design5.html"><img src="../images/design5.jpg" /></a></li>
+</ul>
+</div>
+<div id="footer">
+212 866 8875 &#8226; <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#98;&#101;&#114;&#116;&#64;&#114;&#111;&#98;&#101;&#114;&#116;&#97;&#98;&#114;&#97;&#109;&#115;&#46;&#110;&#101;&#116;">&#114;&#111;&#98;&#101;&#114;&#116;&#64;&#114;&#111;&#98;&#101;&#114;&#116;&#97;&#98;&#114;&#97;&#109;&#115;&#46;&#110;&#101;&#116;</a>
+</div>
+</div>
+
+</body>
+</html>

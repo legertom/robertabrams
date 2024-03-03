@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../style.css" type="text/css" />
+<title>Robert Abrams Consulting : Clients</title>
+</head>
+
+<body>
+
+<div id="main">
+<div id="subnav">
+<ul>
+<li><a href="papers.html">Selected<br />Papers</a></li>
+<li><a href="#" class="sel">Robert Abrams'<br />Dance Articles</a></li>
+</ul>
+</div>
+<div id="content">
+<div id="nav">
+<ul>
+<li><a href="../index.html"><img src="../images/services_tab.png" /></a></li>
+<li><a href="../people.html"><img src="../images/people_tab.png" /></a></li>
+<li><a href="../resources.html"><img src="../images/resources_tab_sel.png" /></a></li>
+<li><a href="../portfolio.html"><img src="../images/portfolio_tab.png" /></a></li>
+<li><a href="../email.html"><img src="../images/email_tab.png" /></a></li>
+
+</ul>
+</div>
+<img src="../images/resources_circle.png" id="section"/>
+
+<div id="text">
+<h1>Selected Papers</h1>
+<?php
+
+$curl_handle=curl_init();
+curl_setopt($curl_handle,CURLOPT_URL,'http://www.exploredance.com/ranugget128t.htm?sid=152&s=author');
+curl_setopt($curl_handle,CURLOPT_CONNECTTIMEOUT,2);
+curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);
+$buffer = curl_exec($curl_handle);
+curl_close($curl_handle);
+
+if (empty($buffer))
+{
+    print "<a href='http://www.exploredance.com'><img src='exploredancefeetlogo180.jpeg'><br><strong>ExploreDance.com</strong></a><br>A Web Magazine Bringing the Worlds of Dance Together";
+}
+else
+{
+    print $buffer;
+}
+?>
+
+
+</div>
+
+</div>
+<div id="designs">
+<div id="dtitle">our designs</div>
+<ul>
+<li><a href="../designs/design1.html"><img src="../images/design1.jpg" /></a></li>
+<li><a href="../designs/design2.html"><img src="../images/design2.jpg" /></a></li>
+<li><a href="../designs/design3.html"><img src="../images/design3.jpg" /></a></li>
+<li><a href="../designs/design4.html"><img src="../images/design4.jpg" /></a></li>
+</ul>
+</div>
+<div id="footer">
+212 866 8875 &#8226; <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#98;&#101;&#114;&#116;&#64;&#114;&#111;&#98;&#101;&#114;&#116;&#97;&#98;&#114;&#97;&#109;&#115;&#46;&#110;&#101;&#116;">&#114;&#111;&#98;&#101;&#114;&#116;&#64;&#114;&#111;&#98;&#101;&#114;&#116;&#97;&#98;&#114;&#97;&#109;&#115;&#46;&#110;&#101;&#116;</a>
+</div>
+</div>
+
+
+</body>
+</html>

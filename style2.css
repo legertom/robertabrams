@@ -1,0 +1,88 @@
+
+/* Existing styles */
+/* fix IE transparent png problem */
+div, a, img { behavior: url(/images/iepngfix.htc) }
+
+/* general styles and text styles */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background:#122D48;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: #0b5da7;
+    font-size: 20px;
+}
+
+.intro {
+    color: #cd9100;
+}
+
+a {
+    color: #0e456c;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.designs {
+    font-size: 12px;
+}
+
+#text p {
+    margin-top: -10px;
+    font-size: 11px;
+    text-align: justify;
+}
+
+#text h1 {
+    padding-bottom: 0px;
+}
+
+.caption {
+    margin-top: 0px;
+    padding-top: 10px;
+    color: #333333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #main {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    
+    #content {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        background: none;
+    }
+    
+    #nav ul, #subnav ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    
+    #nav li, #subnav li {
+        display: block;
+        text-align: center;
+    }
+    
+    .intro, h1, #text p, .caption {
+        font-size: 100%;
+    }
+}
+
+/* Further media queries can be added for additional breakpoints */

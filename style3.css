@@ -1,0 +1,55 @@
+
+/* Responsive CSS Adjustments */
+
+/* General Styles - Keeping original styles, ensuring responsiveness */
+img, #main, #content, #section {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensuring text is readable on smaller devices */
+body, #text p, #subnav a, #nav a {
+    font-size: 100%;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    /* Stack navigation items vertically */
+    #nav ul, #subnav ul {
+        display: block;
+    }
+
+    #nav li, #subnav li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Adjust main content area */
+    #main, #content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Hide elements that may not fit or are not critical on smaller screens */
+    .hide-on-mobile {
+        display: none;
+    }
+    
+    /* Adjust font sizes for readability */
+    body, #text p, .caption, #subnav a, #nav a {
+        font-size: 16px; /* Adjust based on your design's needs */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    /* You might want to make more specific adjustments here */
+}
